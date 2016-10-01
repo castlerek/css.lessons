@@ -1,0 +1,63 @@
+<style type="text/css">
+
+    div {
+        width      : 50px;
+        height     : 50px;
+        border     : 1px solid black;
+        box-sizing : border-box;
+    }
+
+    .a {
+        position: static;
+    }
+
+    .b {
+        position : relative;
+        top      : 10px;
+        left     : 10px;
+        width    : 100px;
+        height   : 100px;
+    }
+
+    .b-abs {
+        position : absolute;
+        top      : 25%;
+        left     : 25%;
+    }
+
+    .c-abs {
+        position : absolute;
+        top      : 50%;
+        left     : 50%;
+        width    : 150px;
+        height   : 150px;
+    }
+
+    .c-child-simple {
+        position : relative;
+        top      : 5px;
+        left     : 5px;
+    }
+
+    .c-child-abs {
+        position : relative;
+    }
+
+    .fixed {
+        position : fixed;
+        bottom   : 30px;
+        right    : 30px;
+    }
+
+</style>
+<div class = "a">A</div>
+<div class = "b">B</div>
+<div class = "b">
+    B1
+    <div class="b-abs">B1 Child</div>
+</div>
+<div class = "c-abs">
+    <div class="c-child-simple">Foo</div>
+    <div class="c-child-abs">Bar</div>
+</div>
+<div class = "fixed">Fixed</div>
